@@ -2,20 +2,20 @@
 
 /**
  * calc_size - handle cast args size
- * @fmt: string arg format
+ * @format: string arg format
  * @a: all args list
  * Return: size (Success)
  */
-int calc_size(const char *fmt, int *a)
+int calc_size(const char *format, int *a)
 {
 	int curr_a = *a + 1;
 	int size = 0;
 
-	if (fmt[curr_a] == 'l')
+	if (format[curr_a] == 'l')
 	{
 		size = S_LONG;
 	}
-	else if (fmt[curr_a] == 'h')
+	else if (format[curr_a] == 'h')
 	{
 		size = S_SHORT;
 	}
