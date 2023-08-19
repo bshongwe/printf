@@ -18,7 +18,7 @@ int calc_flags(const char *format, int *a)
 		for (j = 0; FL_[j] != '\0'; j++)
 			if (format[current_i] == FL_CH[j])
 			{
-				flags |= FLAGS_ARR[j];
+				flags |= FL_ARR[j];
 				break;
 			}
 
