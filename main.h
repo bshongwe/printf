@@ -16,7 +16,7 @@
 
 /**
  * struct fmt - struct operator
- * @format: fn format
+ * @fmt: fn format
  * @fn: function used at instance
  */
 struct fmt
@@ -41,12 +41,18 @@ int calc_flags(const char *format, int *a);
 int calc_width(const char *format, int *a, va_list list);
 int calc_precision(const char *format, int *a, va_list list);
 int calc_size(const char *format, int *a);
+int write_unsgnd(int is_negative, int a, char buffer[],
+		int flags, int width, int precision, int size);
 /* Chars and Strings Specifiers */
-int print_percent(va_list types, char buffer [],
+int print_percent(va_list types, char buffer[],
 		int flags, int width, int percision, int size);
-int print_string(va_list types, char buffer [],
+int print_reverse(va_list types, char buffer[],
+		int flags, int width, percision, int size);
+int print_string(va_list types, char buffer[],
 		int flags, int width, int percision, int size);
-int print_char(va_list types, char buffer [],
+int print_char(va_list types, char buffer[],
+		int flags, int width, int percision, int size);
+int print_rot13string(va_list types, char buffer[],
 		int flags, int width, int percision, int size);
 
 #endif /* end of MAIN_H */
