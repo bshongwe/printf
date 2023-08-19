@@ -24,7 +24,7 @@ int calc_precision(const char *format, int *a, va_list list)
 		if (is_digit(format[curr_a]))
 		{
 			precision *= 10;
-			precision += fmt[curr_a] - '0';
+			precision += format[curr_a] - '0';
 		}
 		else if (format[curr_a] == '*')
 		{
