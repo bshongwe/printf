@@ -19,14 +19,16 @@ int calc_width(const char *format, int *a, va_list list)
 			width *= 10;
 			width += format[curr_a] - '0';
 		}
-		else if (fmt[curr_a] == '*')
+		else if (format[curr_a] == '*')
 		{
 			curr_a++;
 			width = va_arg(list, int);
 			break;
 		}
 		else
+		{
 			break;
+		}
 	}
 
 	*a = curr_a - 1;

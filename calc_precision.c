@@ -33,7 +33,9 @@ int calc_precision(const char *format, int *a, va_list list)
 			break;
 		}
 		else
+		{
 			break;
+		}
 	}
 
 	*a = curr_a - 1;
