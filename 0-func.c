@@ -1,13 +1,12 @@
 #include "main.h"
 
 /** Print char **/
-
 /**
- * print_char -  Function that is responsible for printing a character.
- * @types: List of variable arguments passed to the function
- * @buffer: An array that acts as a temporary storage location
- * @flags: Macros or enum values
- * @width: Specifies the minimum width of the printed output
+ * print_char -  char print function
+ * @types: var args list
+ * @buffer: print handling buffer temp pointer
+ * @flags: flags handler for macros or enum values
+ * @width: width print handler
  * @precision: Precision specification
  * @size: Size specifier
  * Return: Number of chars printed
@@ -19,10 +18,11 @@ int print_char(va_list types, char buffer[],
 
 	return (handle_write_char(c, buffer, flags, width, precision, size));
 }
-/** Print a string **/
+
+/** Print string **/
 /**
- * print_string - function that prints a string
- * @types: List of variable arguments passed to the function
+ * print_string - string func
+ * @types: args list
  * @buffer: An array that acts as a temporary storage location
  * @flags: Macros or enum values
  * @width: Specifies the minimum width of the printed output
