@@ -35,6 +35,7 @@ void handle_length_modifiers(char modifier, char specifier, va_list args);
 void _printf_width(const char *format, ...);
 void _precision(const char *format, ...);
 void formatWithFlags(const char *format, ...);
+int handle_format_specifier(const char **format, va_list *args);
 
 
 #endif /* end of MAIN_H */
