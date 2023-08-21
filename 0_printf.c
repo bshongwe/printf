@@ -7,58 +7,73 @@
  */
 int _printf(const char *format, ...)
 {
-    va_list args;
-    va_start(args, format);
+	va_list args;
 
-    int count = 0;
+	va_start(args, format);
 
-    while (*format != '\0')
-    {
-    	if (*format == '%')
-    	{
-    		format++;
+	int count = 0;
 
-    		if (*format == '\0')
-    			break;
+	while (*format != '\0')
+	{
+		if (*format == '%')
+		{
+			format++;
 
-            	if (*format == 'c')
-            	{            		
-                	char c = (char) va_arg(args, int);
-                	putchar(c);
-                	count++;
-            	}
-            	else if (*format == 's')
-            	{               	
-                	char *str = va_arg(args, char *);
-                	while (*str != '\0')
-                	{
-                    		putchar(*str);
-                    		str++;
-                    		count++;
-                	}
-            	}
-            	else if (*format == '%')
-            	{                	
-                	putchar('%');
-                	count++;
-            	}
-            	else
-            	{                	
-                	putchar('%');
-                	putchar(*format);
-                	count += 2;
-            	}
-        }
-        else
-        {        	
-            	putchar(*format);
-            	count++;
-        }
+			if (*format == '\0')
+				break;
+			count += handle_format_specifier(&format, &args);
+		}
+		else
+		{
+			putchar(*format);
+			count++;
+		}
+		format++;
+	}
 
-        format++;
-    }
+	va_end(args);
 
-    va_end(args);
+	return (count);
+}
 
-    return count;
+/**
+ * handle_format_specifier - print char count in specifier format
+ * @args: logic implement for cases
+ * @format: update format pointer
+ * Return: number of char printed (Success)
+ */
+int handle_format_specifier(const char **format, va_list *args)
+{
+	int count = 0;
+
+	switch (**format)
+	{
+		case 'c': {
+				  char c = (char)va_arg(*args, int);
+
+				  putchar(c);
+				  count++;
+				  break;
+			  }
+		case 's': {
+				  char *str = va_arg(*args, char *);
+
+				  while (*str != '\0')
+				  {
+					  putchar(*str);
+					  str++;
+					  count++;
+				  }
+				  break;
+			  }
+		case '%': {
+				  putchar('%');
+				  putchar(**format);
+				  count += 2;
+				  break;
+			  }
+	}
+
+	(*format)++;
+	return (count);
 }
