@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+ * _printf - func print
+ * @format: input str char
+ * Return: number of char, count (Success)
+ */
 int _printf(const char *format, ...)
 {
     va_list args;
