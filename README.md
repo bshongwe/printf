@@ -178,7 +178,7 @@ Handle the following flag characters for non-custom conversion specifiers:
 ## Task 8.
 
 Task completion = complete
-Checker: 4/72 checked
+Checker: 4/77 checked
 
  Sarcasm is lost in print
 #advanced
