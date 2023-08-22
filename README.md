@@ -151,17 +151,17 @@ Handle the field width for non-custom conversion specifiers
 
 Handle the precision for non-custom conversion specifiers.
 
-##Task 11.It's depressing when you're still around and your albums are out of print
+## Task 11.It's depressing when you're still around and your albums are out of print
 #advanced
 
 Handle the 0 flag character for non-custom conversion specifiers.
 
-##Task 12. Every time that I wanted to give up, if I saw an interesting textile, print what ever, suddenly I would see a collection
+## Task 12. Every time that I wanted to give up, if I saw an interesting textile, print what ever, suddenly I would see a collection
 #advanced
 
 Handle the - flag character for non-custom conversion specifiers.
 
-##Task 13. Print is the sharpest and the strongest weapon of our party
+## Task 13. Print is the sharpest and the strongest weapon of our party
 #advanced
 
 Handle the following custom conversion specifier:
@@ -169,7 +169,7 @@ Handle the following custom conversion specifier:
     r : prints the reversed string
 
 
-##Task 14. The flood of print has turned reading into a process of gulping rather than savoring
+## Task 14. The flood of print has turned reading into a process of gulping rather than savoring
 #advanced
 
 Handle the following custom conversion specifier:
@@ -177,7 +177,7 @@ Handle the following custom conversion specifier:
     R: prints the rot13'ed string
 
 
-##Task 15. *
+## Task 15. *
 #advanced
 
 All the above options work well together.
