@@ -200,7 +200,12 @@ Checker: 4/72 checked
 
 Handle the field width for non-custom conversion specifiers
 
-## Task 10. The negative is the equivalent of the composer's score, and the print the performance
+## Task 10.
+
+Task completion = complete
+Checker: 4/87 checked
+
+ The negative is the equivalent of the composer's score, and the print the performance
 #advanced
 
 Handle the precision for non-custom conversion specifiers.
