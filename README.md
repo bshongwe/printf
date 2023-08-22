@@ -146,7 +146,12 @@ Handle the following custom conversion specifier:
     S : prints the string.
     Non printable characters (0 < ASCII value < 32 or >= 127) are printed this way: \x, followed by the ASCII code value in hexadecimal (upper case - always 2 characters)
 
-## Task 6. How is the world ruled and led to war? Diplomats lie to journalists and believe these lies when they see them in print
+## Task 6.
+
+Task completion = complete
+Checker: 5\11 checked
+
+ How is the world ruled and led to war? Diplomats lie to journalists and believe these lies when they see them in print
 #advanced
 
 Handle the following conversion specifier: p.
