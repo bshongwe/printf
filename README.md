@@ -210,7 +210,12 @@ Checker: 4/87 checked
 
 Handle the precision for non-custom conversion specifiers.
 
-## Task 11. It's depressing when you're still around and your albums are out of print
+## Task 11.
+
+Task completion = complete
+Checker: 4/32 checked
+
+ It's depressing when you're still around and your albums are out of print
 #advanced
 
 Handle the 0 flag character for non-custom conversion specifiers.
