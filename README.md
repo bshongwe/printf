@@ -133,7 +133,12 @@ Checker: Passed
 
 Use a local buffer of 1024 chars in order to call write as little as possible.
 
-## Task 5. My weakness is wearing too much leopard print
+## Task 5.
+
+Task completion = complete
+Checker: Passed
+
+ My weakness is wearing too much leopard print
 #advanced
 
 Handle the following custom conversion specifier:
