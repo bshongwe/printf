@@ -161,7 +161,12 @@ Handle the following conversion specifier: p.
     You don’t have to handle precision
     You don’t have to handle the length modifiers
 
-## Task 7. The big print gives and the small print takes away
+## Task 7.
+
+Task completion = Complete
+Checker: 3/55 Checked
+
+ The big print gives and the small print takes away
 #advanced
 
 Handle the following flag characters for non-custom conversion specifiers:
