@@ -104,7 +104,12 @@ Handle the following custom conversion specifiers:
 
     b: the unsigned int argument is converted to binary
 
-## Task 3. What one has not experienced, one will never understand in print
+## Task 3.
+
+Task completion = Complete
+Checker: Passed
+
+ What one has not experienced, one will never understand in print
 #advanced
 
 Handle the following conversion specifiers:
