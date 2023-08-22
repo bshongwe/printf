@@ -92,7 +92,12 @@ Handle the following conversion specifiers:
 
  
 
-## Task 2. With a face like mine, I do better in print
+## Task 2.
+
+Task completion = Complete
+Checker: Passed
+
+ With a face like mine, I do better in print
 #advanced
 
 Handle the following custom conversion specifiers:
