@@ -37,6 +37,30 @@ void _printf_width(const char *format, ...);
 void _precision(const char *format, ...);
 void formatWithFlags(const char *format, ...);
 int handle_format_specifier(const char **format, va_list *args);
+int (*check_prtr(char specifier))(char *, int, va_list);
 
+/* Integers */
+char *_lcutoa(unsigned int value, unsigned int based);
+int _abs(int n);
+char *_utoa(unsigned int value, unsigned int based);
+char *_itoa(int value, int base);
+
+/* Assign and count len to buffer */
+int _rev_assign(char *buff, int count, char *value);
+int _assign(char *buff, int count, char *value);
+
+/* Parameters Functions */
+int func_d(char *buff, int count, va_list value);
+int func_i(char *buff, int count, va_list value);
+int func_u(char *buff, int count, va_list value);
+int func_o(char *buff, int count, va_list value);
+int func_x(char *buff, int count, va_list value);
+int func_X(char *buff, int count, va_list value);
+int func_c(char *buff, int count, va_list value);
+int func_s(char *buff, int count, va_list value);
+int func_ptg(char *buff, int count, va_list value);
+int func_b(char *buff, int count, va_list value);
+int func_r(char *buff, int count, va_list value);
+int func_R(char *buff, int count, va_list value);
 
 #endif /* end of MAIN_H */
