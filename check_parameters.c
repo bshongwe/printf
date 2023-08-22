@@ -3,7 +3,7 @@
 /**
  * *check_prtr - parameter checker
  * @specifier: str var
- * Retur: int
+ * Return: int
  */
 
 int (*check_prtr(char specifier))(char *, int, va_list)
