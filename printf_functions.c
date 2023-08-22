@@ -134,7 +134,7 @@ int func_c(char *buff, int count, va_list value)
  * @value: index value
  * Return: integer (Success)
  */
-int func_s(char *, int count, va_list value)
+int func_s(char *buff, int count, va_list value)
 {
 	char *str = va_arg(value, char *);
 
