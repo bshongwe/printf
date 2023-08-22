@@ -44,6 +44,10 @@ Your code will be compiled this way:
 -  If the task does not specify what to do with an edge case, do the same as printf
 
 
+# Authors
+Ernest Shongwe
+Zikona Mnyaka
+
 # Tasks
 ## Task 0. I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life
 mandatory
