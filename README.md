@@ -175,7 +175,12 @@ Handle the following flag characters for non-custom conversion specifiers:
     space
     #
 
-## Task 8. Sarcasm is lost in print
+## Task 8.
+
+Task completion = complete
+Checker: 4/72 checked
+
+ Sarcasm is lost in print
 #advanced
 
 Handle the following length modifiers for non-custom conversion specifiers:
