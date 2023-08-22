@@ -17,24 +17,25 @@ int _strlen(char *s)
 }
 
 /**
- * *reverse - reverses the content of an array of intergers
+ * *_reverse - reverses the content of an array of intergers
  * @s: input array
  * @n: number of elements of the array
  * Return: s of char *
  */
 char *_reverse(char *s, int n)
+{
 	int i, aux;
 
 	n--;
 
 	for (i = 0; i <= n; i++, n--)
-{
-	aux = s[i];
-	s[i] = s[n];
-	s[n] = aux;
-}
+	{
+		aux = s[i];
+		s[i] = s[n];
+		s[n] = aux;
+	}
 
-return (s);
+	return (s);
 }
 
 /**
@@ -47,7 +48,7 @@ char *_rot13(char *str)
 {
 	int i, j;
 	char chs[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char rot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm"
+	char rot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 		for (i = 0; str[i]; i++)
 		{
@@ -60,7 +61,8 @@ char *_rot13(char *str)
 				}
 			}
 		}
-	return (str);
+
+		return (str);
 }
 
 /**
@@ -76,7 +78,9 @@ void _strcpy(char *dest, char *src)
 	int i;
 
 	for (i = 0; i <= len; i++)
+	{
 		dest[i] = src[i];
+	}
 }
 
 /**

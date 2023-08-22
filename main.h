@@ -3,12 +3,13 @@
 
 /* Libraries */
 #include <stdio.h>
+#include <stdlib.h>
 #include <stdarg.h>
 #include <string.h>
 #include <unistd.h>
 
 /* Buffer Defs */
-#define UNUSED(x) (void)(x)
+/*#define UNUSED(x) (void)(x)*/
 #define BUFFER_SIZE 1024
 
 /* Structs*/
@@ -25,6 +26,7 @@ typedef struct ptr
 
 /* Func Prototypes */
 int _printf(const char *format, ...);
+/*
 int custom_printf(const char *format, ...);
 void _print_letters(const char *format, ...);
 void printBinary(unsigned int num);
@@ -37,6 +39,7 @@ void _printf_width(const char *format, ...);
 void _precision(const char *format, ...);
 void formatWithFlags(const char *format, ...);
 int handle_format_specifier(const char **format, va_list *args);
+*/
 int (*check_prtr(char specifier))(char *, int, va_list);
 
 /* Integers */
@@ -49,7 +52,7 @@ char *_itoa(int value, int base);
 int _rev_assign(char *buff, int count, char *value);
 int _assign(char *buff, int count, char *value);
 
-/* Parameters Functions */
+/* Parameters */
 int func_d(char *buff, int count, va_list value);
 int func_i(char *buff, int count, va_list value);
 int func_u(char *buff, int count, va_list value);
@@ -62,5 +65,12 @@ int func_ptg(char *buff, int count, va_list value);
 int func_b(char *buff, int count, va_list value);
 int func_r(char *buff, int count, va_list value);
 int func_R(char *buff, int count, va_list value);
+
+/* Strings */
+int _strlen(char *s);
+char *_rot13(char *str);
+char *_reverse(char *s, int n);
+void _rev_ptr(char *str);
+void _strcpy(char *dest, char *src);
 
 #endif /* end of MAIN_H */

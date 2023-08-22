@@ -1,11 +1,11 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * _printf - print function
  * @format: str
  * Return: integer
  */
-
 int _printf(const char *format, ...)
 {
 	char *buff;
@@ -24,7 +24,7 @@ int _printf(const char *format, ...)
 
 	while (format[i])
 	{
-		if (format[i] i = '%')
+		if (format[i] != '%')
 		{
 			buff[count] = format[i];
 			count++;
@@ -37,7 +37,7 @@ int _printf(const char *format, ...)
 				buff[count] = '%';
 				i++;
 				count++;
-				countinue;
+				continue;
 			}
 			count = func(&buff[count], count, arg_value);
 			i++;

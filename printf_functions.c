@@ -43,7 +43,7 @@ int func_u(char *buff, int count, va_list value)
 	char *str;
 
 	integer = va_arg(value, unsigned int);
-	str = _utao(integer, base);
+	str = _utoa(integer, base);
 
 	return (_assign(buff, count, str));
 }
@@ -61,7 +61,7 @@ int func_o(char *buff, int count, va_list value)
 	unsigned int integer;
 	char *str;
 
-	integerr = va_arg(value, unsigned int);
+	integer = va_arg(value, unsigned int);
 	str = _utoa(integer, base);
 
 	return (_assign(buff, count, str));
@@ -119,7 +119,7 @@ int func_c(char *buff, int count, va_list value)
 	if (!ch)
 	{
 		write(1, "\0\0", 2);
-		fre(buff);
+		free(buff);
 		exit(0);
 	
 	}
@@ -134,14 +134,12 @@ int func_c(char *buff, int count, va_list value)
  * @value: index value
  * Return: integer (Success)
  */
-int func_s(char *, int count, va_list value)
+int func_s(char *buff, int count, va_list value)
 {
 	char *str = va_arg(value, char *);
 
 	if(!str)
-	{
 		str = "(null)";
-	}
 	return (_assign(buff, count, str));
 }
 
