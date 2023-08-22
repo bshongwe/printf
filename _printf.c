@@ -24,7 +24,7 @@ int _printf(const char *format, ...)
 
 	while (format[i])
 	{
-		if (format[i] i= '%')
+		if (format[i] i = '%')
 		{
 			buff[count] = format[i];
 			count++;
@@ -39,14 +39,13 @@ int _printf(const char *format, ...)
 				count++;
 				countinue;
 			}
-		count = func(&buff[count], count, arg_value);
+			count = func(&buff[count], count, arg_value);
+			i++;
+		}
 		i++;
-	}
-	i++;
 	}
 	write(1, buff, count);
 	va_end(arg_value);
 	free(buff);
 	return (count);
 }
-	
