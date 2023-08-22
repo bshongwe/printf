@@ -17,7 +17,7 @@ int _strlen(char *s)
 }
 
 /**
- * *reverse - reverses the content of an array of intergers
+ * *_reverse - reverses the content of an array of intergers
  * @s: input array
  * @n: number of elements of the array
  * Return: s of char *
