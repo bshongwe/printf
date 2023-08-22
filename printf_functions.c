@@ -61,7 +61,7 @@ int func_o(char *buff, int count, va_list value)
 	unsigned int integer;
 	char *str;
 
-	integerr = va_arg(value, unsigned int);
+	integer = va_arg(value, unsigned int);
 	str = _utoa(integer, base);
 
 	return (_assign(buff, count, str));
