@@ -14,6 +14,7 @@ int _printf(const char *format, ...)
 	int (*func)(char *, int, va_list);
 
 	buff = malloc(4000);
+
 	if ((!format || !buff) || (format[0] == '%' && format[1] == '\0'))
 	{
 		free(buff);
