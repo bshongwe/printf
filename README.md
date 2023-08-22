@@ -73,7 +73,12 @@ Write a function that produces output according to a format.
     You don’t have to handle the length modifiers
 
 
-## Task 1. Education is when you read the fine print. Experience is what you get if you don't
+## Task 1.
+
+Task completion =Complete
+Checker: Passed
+
+ Education is when you read the fine print. Experience is what you get if you don't
 mandatory
 
 Handle the following conversion specifiers:
