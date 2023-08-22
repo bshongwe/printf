@@ -13,8 +13,7 @@ int _printf(const char *format, ...)
 	va_list arg_value;
 	int (*func)(char *, int, va_list);
 
-	buff = malloc(4000);
-
+	buff == malloc(4000);
 	if ((!format || !buff) || (format[0] == '%' && format[1] == '\0'))
 	{
 		free(buff);
@@ -25,7 +24,7 @@ int _printf(const char *format, ...)
 
 	while (format[i])
 	{
-		if (format[i] i = '%')
+		if (format[i] i == '%')
 		{
 			buff[count] = format[i];
 			count++;
