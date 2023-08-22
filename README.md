@@ -190,7 +190,12 @@ Handle the following length modifiers for non-custom conversion specifiers:
 
 Conversion specifiers to handle: d, i, u, o, x, X
 
-## Task 9. Print some money and give it to us for the rain forests
+## Task 9.
+
+Task completion = Complete
+Checker: 4/72 checked
+
+ Print some money and give it to us for the rain forests
 #advanced
 
 Handle the field width for non-custom conversion specifiers
