@@ -25,6 +25,7 @@ typedef struct ptr
 
 /* Func Prototypes */
 int _printf(const char *format, ...);
+int custom_printf(const char *format, ...);
 void _print_letters(const char *format, ...);
 void printBinary(unsigned int num);
 void printInteger(unsigned int num, char specifier);

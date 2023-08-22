@@ -2,7 +2,7 @@
 
 /**
  * rot13 - print rot13
- * @rot: list passed
+ * @str: input string
  * Return: chars count
  */
 void rot13(char *str)
@@ -21,6 +21,8 @@ void rot13(char *str)
 
 /**
  * custom_printf - print formated string
+ * @format: print format
+ * Return: 0 (Success)
  */
 int custom_printf(const char *format, ...)
 {
@@ -47,18 +49,20 @@ int custom_printf(const char *format, ...)
 	}
 
 	va_end(args);
-	return 0;
+	return (0);
 }
 
 /**
- * custom_printf - print formatted string
+ * main - entry point
+ * custom_printf: print formatted string
+ * Return: 0 (Success)
  */
-int main()
+int main(void)
 {
 	char message[] = "Hello, World!";
 
 	custom_printf("Original: %s\n", message);
 	custom_printf("ROT13: %R\n", message);
 
-	return 0;
+	return (0);
 }
