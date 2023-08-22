@@ -7,7 +7,6 @@
  * @value: value in the index
  * Return: int
  */
-
 int _assign(char *buff, int count, char *value)
 {
 	int i = 0;
@@ -16,6 +15,7 @@ int _assign(char *buff, int count, char *value)
 	{
 		buff[i] = value[i];
 		count++;
+		i++;
 	}
 	return (count);
 
@@ -28,10 +28,9 @@ int _assign(char *buff, int count, char *value)
  * @value: value in the index
  * return: int
  */
-
 int _rev_assign(char *buff, int count, char *value)
 {
-	int len = _strlen(valu);
+	int len = _strlen(value);
 	int i;
 
 	for (i = 0; i <= len; i++)
